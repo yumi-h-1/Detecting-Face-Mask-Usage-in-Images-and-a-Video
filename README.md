@@ -29,13 +29,14 @@ This project focuses on developing a reliable model for detecting face masks in 
 
   ***Model Comparison using the image test set***
   
-| Model Name | Training Speed (Sec) | Test Accuracy | Model Size |
-| --- | --- | --- | --- |
-| SIFT+SVM | 0.42 | 0.60 | 374 KB |
-| HOG+SVM | 5.87 | 0.82 | 23.1 MB |
-| HOG+MLP | 4.91 | 0.85 | 1.6 MB |
-| ResNet34 | 4080.90 (Google Colab GPU used) | 0.95 | 81.3 MB |
+  | Model Name | Training Speed (Sec) | Test Accuracy | Model Size |
+  | --- | --- | --- | --- |
+  | SIFT+SVM | 0.42 | 0.60 | 374 KB |
+  | HOG+SVM | 5.87 | 0.82 | 23.1 MB |
+  | HOG+MLP | 4.91 | 0.85 | 1.6 MB |
+  | ResNet34 | 4080.90 (Google Colab GPU used) | 0.95 | 81.3 MB |
 - **Future Work**: To improve ResNet34's robustness, especially with imbalanced classes, explicitly adding augmented images to the training set could be considered. This would involve generating and saving augmented images before training, creating a larger, more balanced dataset.
 
 ## Used Datasets
 - **Face Mask Video**: [How To Wear Face Mask The Right Way](https://youtu.be/W_9jLju5FuQ?feature=shared)
+- **Face Mask Images**: Images are randomly mixed from multiple public datasets.

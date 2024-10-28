@@ -25,7 +25,9 @@ This project focuses on developing a reliable model for detecting face masks in 
   ***ResNet34***: Fine-tuned with a lower learning rate (0.0001) and increased epochs (100) for better accuracy in face mask detection. Used the Adam optimiser to refine performance with smaller incremental updates.
 
 - **Evaluation**: Assess models using accuracy and confusion matrices on the test set.
-  ![resnet_test](results/figures/pretrained-resnet-image-test-result.png "ResNet34 Image Test Result")
+  ![resnet_test](results/figures/pretrained-resnet-image-test-result.png)
+
+  ***ResNet34 Image Test Result***
   
 ## Key Findings
 - **Model Selection**: The high accuracy and reliable predictions of ResNet34 on both images and video suggest its effectiveness for image classification tasks, despite occasional misclassifications.
@@ -40,6 +42,8 @@ This project focuses on developing a reliable model for detecting face masks in 
   | ResNet34 | 4080.90 (Google Colab GPU used) | 0.95 | 81.3 MB |
   
   ![resnet_video_test](results/figures/video-test-result_1.jpg)  ![resnet_video_test](results/figures/video-test-result_2.jpg)  ![resnet_video_test](results/figures/video-test-result_3.jpg)
+
+  ***ResNet34 Video Test Result***
 
 - **Future Work**: To improve ResNet34's robustness, especially with imbalanced classes, explicitly adding augmented images to the training set could be considered. This would involve generating and saving augmented images before training, creating a larger, more balanced dataset.
 

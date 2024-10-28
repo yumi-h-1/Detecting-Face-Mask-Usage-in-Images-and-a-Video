@@ -18,7 +18,6 @@ This project focuses on developing a reliable model for detecting face masks in 
   ***MLP with HOG***: HOG features were also used to train a Multilayer Perceptron (MLP) model, acting as a baseline neural network.
   
   ***ResNet34***: Employed a pre-trained ResNet34 model from PyTorch for convolutional feature extraction without additional feature engineering, as the CNN layers inherently capture essential patterns.
-
 - **Training and Hyperparameter Optimisation**:
   
   ***SVM and MLP***: Grid search was applied to identify optimal hyperparameters. SVM tuning focused on regularisation C, gamma, and kernel type, while MLP underwent a two-stage search: the first round optimised hidden layers, activation, and optimiser; the second tuned regularisation alpha, learning rate, and momentum.
@@ -27,7 +26,8 @@ This project focuses on developing a reliable model for detecting face masks in 
 
 ## Key Findings
 - **Model Selection**: The high accuracy and reliable predictions of ResNet34 on both images and video suggest its effectiveness for image classification tasks, despite occasional misclassifications.
-***Model Comparison using the image test set***
+
+  ***Model Comparison using the image test set***
 | Model Name | Training Speed (Sec) | Test Accuracy | Model Size |
 | --- | --- | --- | --- |
 | SIFT+SVM | 0.42 | 0.60 | 374 KB |

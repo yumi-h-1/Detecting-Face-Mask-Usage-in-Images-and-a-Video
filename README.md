@@ -35,7 +35,7 @@ This project focuses on developing a reliable model for detecting face masks in 
 
   ***Model comparison using the image test set***
   
-  | Model Name | Training Speed (Sec) | Test Accuracy | Model Size |
+  | Model Name | Training Speed (sec) | Test Accuracy | Model Size |
   | --- | --- | --- | --- |
   | SIFT+SVM | 0.42 | 0.60 | 374 KB |
   | HOG+SVM | 5.87 | 0.82 | 23.1 MB |

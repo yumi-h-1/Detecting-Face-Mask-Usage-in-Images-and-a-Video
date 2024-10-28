@@ -38,4 +38,4 @@ For video testing, OpenCV's VideoCapture function detected faces, starting with 
 - **Challenges and Observations**: Both models achieved over 80% accuracy, though there remains a risk of overfitting due to the dataset’s imbalance and added noise. Careful noise addition is essential, as it can mislead models if complexity isn’t sufficient to generalise effectively. Future models should apply noise more cautiously.
 
 ## Used Datasets
-- **Face Mask Video**: [How To Wear Face Mask The Right Way](https://www.kaggle.com/datasets/mirbektoktogaraev/should-this-loan-be-approved-or-denied](https://youtu.be/W_9jLju5FuQ?feature=shared))
+- **Face Mask Video**: [How To Wear Face Mask The Right Way](https://youtu.be/W_9jLju5FuQ?feature=shared)

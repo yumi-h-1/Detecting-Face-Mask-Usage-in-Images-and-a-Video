@@ -24,6 +24,8 @@ This project focuses on developing a reliable model for detecting face masks in 
   
   ***ResNet34***: Fine-tuned with a lower learning rate (0.0001) and increased epochs (100) for better accuracy in face mask detection. Used the Adam optimiser to refine performance with smaller incremental updates.
 
+- **Evaluation**: Assess models using accuracy and confusion matrices on the test set.
+  ![resnet_test](results/figures/pretrained-resnet-image-test-result.png)
 ## Key Findings
 - **Model Selection**: The high accuracy and reliable predictions of ResNet34 on both images and video suggest its effectiveness for image classification tasks, despite occasional misclassifications.
 

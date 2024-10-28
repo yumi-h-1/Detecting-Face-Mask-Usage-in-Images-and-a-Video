@@ -3,10 +3,9 @@
 This project focuses on developing a reliable model for detecting face masks in video. Four models were built and evaluated: two SVM (Support Vector Machine) models, an MLP (Multilayer Perceptron), and a pre-trained ResNet34 CNN (Convolutional Neural Network). Each model uses a distinct approach to feature extraction to compare their effectiveness in image classification tasks.
 
 ## Project Files
-- **Data**: Cleaned data is stored in the `data/` and raw data is in the `data/raw` folder.
-- **Notebooks**: The notebook for data cleaning is located in the `notebooks/` folder.
-- **Scripts**: MATLAB scripts for training and testing models are located in the `scripts/` folder.
-- **Results**: Trained Random Forest and Logistic Regression models are saved in the `results/models` folder. Visualisations, such as confusion matrix, can be found in the `results/figures` folder, with initial data analysis visualisations in the `results/initial_analysis/figures` folder.
+- **Data**: Images are stored in the `data/image` and a video is in the `data/video` folder.
+- **Notebooks**: The notebook for training and testing is located in the `notebooks/` folder.
+- **Results**: The trained models are saved in the `results/models` folder. Visualisations, such as confusion matrix, can be found in the `results/figures` folder, which also includes screenshots of the face mask detection in the video.
 
 ## Methodology 
 - **Data Preprocessing**: Filter the SBA Kaggle dataset (1987-2014) to California’s science and technology sector, resulting in 7,412 observations with 12 relevant variables. Set a binary target (0 = “paid-in-full,” 1 = “default”) with imbalanced classes. Remove non-predictive variables (e.g., company name) to focus on repayment indicators.

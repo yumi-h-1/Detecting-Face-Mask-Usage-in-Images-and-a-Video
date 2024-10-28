@@ -10,20 +10,14 @@ This project focuses on developing a reliable model for detecting face masks in 
 ## Methodology 
 - **Data Preprocessing**: Images were resized to 256x256 using interpolation. SVM and MLP datasets were split 80:20 for training and validation. ResNet34 images underwent additional augmentation (flipping, colour changes) to improve model generalisation, given class imbalances. Images were normalised by their calculated mean and standard deviation. For video testing, OpenCV's VideoCapture function detected faces, starting with a minimum size of 300x300, resizing faces to 224x224 for ResNet. The model applied bounding boxes and visual predictions on each detected face within the video frames.
 - **Modeling**: Four models were created for this task.
-  
-***SVM with SIFT***: Used SIFT (Scale-Invariant Feature Transform) to extract key features from the images, which were then clustered via K-means (10x the number of labels) for training a Support Vector Machine (SVM).
-
-***SVM with HOG***: Utilised HOG (Histogram of Oriented Gradients) to generate feature histograms from gradients, used to train another SVM.
-
-***MLP with HOG***: HOG features were also used to train a Multilayer Perceptron (MLP) model, acting as a baseline neural network.
-
-***ResNet34***: Employed a pre-trained ResNet34 model from PyTorch for convolutional feature extraction without additional feature engineering, as the CNN layers inherently capture essential patterns.
+  ***SVM with SIFT***: Used SIFT (Scale-Invariant Feature Transform) to extract key features from the images, which were then clustered via K-means (10x the number of labels) for training a Support Vector Machine (SVM).
+  ***SVM with HOG***: Utilised HOG (Histogram of Oriented Gradients) to generate feature histograms from gradients, used to train another SVM.
+  ***MLP with HOG***: HOG features were also used to train a Multilayer Perceptron (MLP) model, acting as a baseline neural network.
+  ***ResNet34***: Employed a pre-trained ResNet34 model from PyTorch for convolutional feature extraction without additional feature engineering, as the CNN layers inherently capture essential patterns.
 
 - **Training and Hyperparameter Optimisation**:
-
-***SVM and MLP***: Grid search was applied to identify optimal hyperparameters. SVM tuning focused on regularisation C, gamma, and kernel type, while MLP underwent a two-stage search: the first round optimised hidden layers, activation, and optimiser; the second tuned regularisation alpha, learning rate, and momentum.
-
-***ResNet34***: Fine-tuned with a lower learning rate (0.0001) and increased epochs (100) for better accuracy in face mask detection. Used the Adam optimiser to refine performance with smaller incremental updates.
+  ***SVM and MLP***: Grid search was applied to identify optimal hyperparameters. SVM tuning focused on regularisation C, gamma, and kernel type, while MLP underwent a two-stage search: the first round optimised hidden layers, activation, and optimiser; the second tuned regularisation alpha, learning rate, and momentum.
+  ***ResNet34***: Fine-tuned with a lower learning rate (0.0001) and increased epochs (100) for better accuracy in face mask detection. Used the Adam optimiser to refine performance with smaller incremental updates.
 
 ## Key Findings
 - **Model Selection**: The high accuracy and reliable predictions of ResNet34 on both images and video suggest its effectiveness for image classification tasks, despite occasional misclassifications.

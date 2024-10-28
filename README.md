@@ -29,7 +29,7 @@ This project focuses on developing a reliable model for detecting face masks in 
 ## Key Findings
 - **Model Selection**: The high accuracy and reliable predictions of ResNet34 on both images and video suggest its effectiveness for image classification tasks, despite occasional misclassifications.
 
-  ***Model Comparison using the image test set***
+  ***Model comparison using the image test set***
   
   | Model Name | Training Speed (Sec) | Test Accuracy | Model Size |
   | --- | --- | --- | --- |
@@ -37,6 +37,9 @@ This project focuses on developing a reliable model for detecting face masks in 
   | HOG+SVM | 5.87 | 0.82 | 23.1 MB |
   | HOG+MLP | 4.91 | 0.85 | 1.6 MB |
   | ResNet34 | 4080.90 (Google Colab GPU used) | 0.95 | 81.3 MB |
+  ![resnet_video_test](results/figures/video-test-result_1.jpg)
+  ![resnet_video_test](results/figures/video-test-result_2.jpg)
+  ![resnet_video_test](results/figures/video-test-result_3.jpg)
 - **Future Work**: To improve ResNet34's robustness, especially with imbalanced classes, explicitly adding augmented images to the training set could be considered. This would involve generating and saving augmented images before training, creating a larger, more balanced dataset.
 
 ## Used Datasets

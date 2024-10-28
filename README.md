@@ -27,6 +27,7 @@ This project focuses on developing a reliable model for detecting face masks in 
 - **Evaluation**: Assess models using accuracy and confusion matrices on the test set.
 
   ***ResNet34 Image Test Result***
+  
   ![resnet_test](results/figures/pretrained-resnet-image-test-result.png)
 
 ## Key Findings

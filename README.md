@@ -31,7 +31,7 @@ This project focuses on developing a reliable model for detecting face masks in 
   ![resnet_test](results/figures/pretrained-resnet-image-test-result.png)
 
 ## Key Findings
-- **Model Selection**: The high accuracy and reliable predictions of ResNet34 on both images and video suggest its effectiveness for image classification tasks, despite occasional misclassifications.
+- **Model Performance**: The high accuracy and reliable predictions of ResNet34 on both images and video suggest its effectiveness for image classification tasks, despite occasional misclassifications.
 
   ***Model comparison using the image test set***
   

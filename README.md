@@ -28,6 +28,7 @@ This project focuses on developing a reliable model for detecting face masks in 
 - **Model Selection**: The high accuracy and reliable predictions of ResNet34 on both images and video suggest its effectiveness for image classification tasks, despite occasional misclassifications.
 
   ***Model Comparison using the image test set***
+  
 | Model Name | Training Speed (Sec) | Test Accuracy | Model Size |
 | --- | --- | --- | --- |
 | SIFT+SVM | 0.42 | 0.60 | 374 KB |

@@ -30,9 +30,9 @@ This project focuses on selecting a reliable model for detecting face masks in i
   
   | Model Name | Training Speed (sec) | Test Accuracy | Model Size |
   | --- | --- | --- | --- |
-  | SIFT+SVM | 0.42 | 0.60 | 374 KB |
-  | HOG+SVM | 5.87 | 0.82 | 23.1 MB |
-  | HOG+MLP | 4.91 | 0.85 | 1.6 MB |
+  | SIFT+SVM | 0.42 (CPU) | 0.60 | 374 KB |
+  | HOG+SVM | 5.87 (CPU) | 0.82 | 23.1 MB |
+  | HOG+MLP | 4.91 (CPU) | 0.85 | 1.6 MB |
   | ResNet34 | 4080.90 (Google Colab GPU used) | 0.95 | 81.3 MB |
 
   ***ResNet34 Image Test Result***

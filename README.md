@@ -38,10 +38,9 @@ This project focuses on selecting a reliable model for detecting face masks in i
   ***ResNet34 Image Test Result***
   
   ![resnet_test](results/figures/pretrained-resnet-image-test-result.png)
-
   <br>Label: 0 = no mask, 1 = mask, 2 = incorrect mask</br>
 
-    ***ResNet34 Video Test Result***
+  ***ResNet34 Video Test Result***
   
   ![resnet_video_test](results/figures/video-test-result_1.jpg)  ![resnet_video_test](results/figures/video-test-result_2.jpg)  ![resnet_video_test](results/figures/video-test-result_3.jpg)
 
